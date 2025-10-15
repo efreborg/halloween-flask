@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Update a Fairy Page{% endblock %}
+
+{% block content %}
+    <h1>Set value for fairy</h1>
+    <form action="/update-fairy" method="post">
+        <label for="page">Choose a fairy:</label>
+        <select name="page" id="page">
+            <option value="Adan">Adan</option>
+            <option value="Aine">Aine</option>
+            <option value="Aoibheann">Aoibheann</option>
+            <option value="Blodeuwedd">Blodeuwedd</option>
+            <option value="Bran">Bran</option>
+            <option value="Caelan">Caelan</option>
+            <option value="Cliodhna">Cliodhna</option>
+            <option value="Eira">Eira</option>
+            <option value="Elara">Elara</option>
+            <option value="Faolan">Faolan</option>
+            <option value="Fia">Fia</option>
+            <option value="Fionnuala">Fionnuala</option>
+            <option value="Gwydion">Gwydion</option>
+            <option value="Lir">Lir</option>
+            <option value="Midir">Midir</option>
+            <option value="Morwenna">Morwenna</option>
+            <option value="Niamh">Niamh</option>
+            <option value="Oisin">Oisin</option>
+            <option value="Orla">Orla</option>
+            <option value="Rhiannon">Rhiannon</option>
+            <option value="Ronan">Ronan</option>
+            <option value="Saoirse">Saoirse</option>
+            <option value="Siofra">Siofra</option>
+            <option value="Tadhg">Tadhg</option>
+            <option value="Torin">Torin</option>
+        </select>
+        <br><br>
+        <label for="message">Enter a value:</label>
+        <input type="text" id="message" name="message" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
